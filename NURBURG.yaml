@@ -1,0 +1,16 @@
+redis:
+- name: testredis
+  cpuCores: 1
+  memoryGB: 1
+  password: testpassword
+traffic:
+  env:
+    API_HOST: http://testservice:3000
+services:
+- name: testservice
+  port: 3000
+  runtime: nodejs
+  instances: 1
+  env:
+    REDIS_URL: redis://:testpassword@testredis-master:6379
+    PORT: 3000
