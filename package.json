@@ -1,0 +1,24 @@
+{
+  "name": "redis-inmemory-experiment",
+  "version": "1.0.0",
+  "description": "Redis in-memory experiment with Node.js API",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "k6 run NURBURG.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "redis": "^4.6.10",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": ["redis", "express", "api", "experiment", "cache"],
+  "author": "",
+  "license": "MIT"
+}
