@@ -1,0 +1,7 @@
+name: testservice
+port: 3000
+runtime: nodejs
+instances: 1
+env:
+  REDIS_URL: redis://:testpassword@testredis-master:6379
+  PORT: 3000
