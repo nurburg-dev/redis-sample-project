@@ -1,4 +1,4 @@
 name: testredis
 cpuCores: 1
 memoryGB: 1
-password: t
+password: testpassword
