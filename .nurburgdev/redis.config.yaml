@@ -1,0 +1,4 @@
+name: testredis
+cpuCores: 1
+memoryGB: 1
+password: testpassword
